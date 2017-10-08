@@ -1,0 +1,172 @@
+
+body
+{
+        background: #e329e3; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(top left, #e329e3,#CF79CF, #DAD2DA);
+        background-repeat: no-repeat;
+      
+}
+
+.conte
+{
+        border-radius:10px;
+}
+
+.first
+{
+   
+   background-color: #e329e3;
+    margin-top: 50px;   
+    height: 380px;
+    border-radius:20px 20px 0 0;
+}
+
+.nave
+{
+        margin-top:20px;
+        word-spacing: 5rem;
+        font-weight: bold;
+        
+}
+.nave li 
+{
+        display: inline-block;
+       
+       
+}
+a,a:visited
+{
+        text-decoration: none;
+        color:#fff;
+        font-size:1rem;
+        text-decoration-style: none;
+}
+li a.active
+{
+        font-size: 1.2rem;
+}
+a:hover
+{
+        text-decoration: none;
+        color:#ea8dea;
+}
+
+.brixo
+{
+        color:#fff;
+        font-size: 180px;
+        font-weight: bold;
+        margin-top: -15px;
+}
+
+.second
+{
+        background-color: #fff;        
+        height: 330px;
+}
+.boton
+{
+font-weight: bold;
+color: #fff;
+background-color:#e329e3;
+border-color: #ccc;
+
+}
+
+.boton a:hover
+{
+font-weight: bold;
+color: #fff;
+background-color:#e329e3;
+}
+
+.three
+{
+        background-color: #E0F2F7;        
+        height: 250px;    
+        text-align: center;
+        border-radius: 0 0 20px 20px;
+}
+
+.work
+{
+
+}
+
+.owrs
+{
+        margin-top: 50px;
+}
+
+.info
+{
+        margin-top: 35px;
+        text-align: justify;
+        text-align-last: center;
+}
+
+.flip3D
+{
+        width: 200px;
+        height: 165px;
+        border-radius: 7px;
+        display: inline-block;
+        margin: 40px;
+
+}
+
+.flip3D > .front
+{
+        position: absolute;
+        transform: perspective(200px) rotateY(0deg);
+        background: #fff;
+        width: 200px;
+        height: 200px;
+        border-radius: 7px;
+        backface-visibility: hidden;
+        transition: transform .5s linear 0s;
+        box-sizing: border-box;
+        padding: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center; 
+}
+.flip3D > .front p
+{
+        padding-top: 20px;  
+}
+
+.flip3D > .back p
+{
+        padding: 50px;  
+}
+
+.flip3D > .front img
+{
+        width: 100%;
+}
+
+.flip3D > .back
+{
+        position: absolute;
+        transform: perspective(200px) rotateY(180deg);
+        background: #FFF;
+        width: 200px;
+        height: 200px;
+        border-radius: 7px;
+        backface-visibility: hidden;
+        transition: transform .5s linear 0s;
+        text-align: center;
+        margin: auto;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center; 
+
+}
+.flip3D:hover > .front
+{
+        transform: perspective(200px) rotateY(-180deg);
+}
+.flip3D:hover > .back
+{
+        transform: perspective(200px) rotateY(0deg);
+}
