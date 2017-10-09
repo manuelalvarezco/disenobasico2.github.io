@@ -59,6 +59,8 @@ a:hover
         margin-top: -15px;
 }
 
+
+
 .second
 {
         background-color: #fff;        
@@ -121,7 +123,7 @@ background-color:#e329e3;
         transform: perspective(200px) rotateY(0deg);
         background: #fff;
         width: 200px;
-        height: 200px;
+        height: 165px;
         border-radius: 7px;
         backface-visibility: hidden;
         transition: transform .5s linear 0s;
@@ -130,6 +132,34 @@ background-color:#e329e3;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         text-align: center; 
 }
+
+.flip3D > .back
+{
+        position: absolute;
+        transform: perspective(200px) rotateY(180deg);
+        background: #FFF;
+        width: 200px;
+        height: 165px;
+        border-radius: 7px;
+        backface-visibility: hidden;
+        transition: transform .5s linear 0s;
+        text-align: center;
+        margin: auto;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center; 
+
+}
+
+.flip3D:hover > .front
+{
+        transform: perspective(200px) rotateY(-180deg);
+}
+.flip3D:hover > .back
+{
+        transform: perspective(200px) rotateY(0deg);
+}
+
 .flip3D > .front p
 {
         padding-top: 20px;  
@@ -145,28 +175,4 @@ background-color:#e329e3;
         width: 100%;
 }
 
-.flip3D > .back
-{
-        position: absolute;
-        transform: perspective(200px) rotateY(180deg);
-        background: #FFF;
-        width: 200px;
-        height: 200px;
-        border-radius: 7px;
-        backface-visibility: hidden;
-        transition: transform .5s linear 0s;
-        text-align: center;
-        margin: auto;
-        box-sizing: border-box;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        text-align: center; 
 
-}
-.flip3D:hover > .front
-{
-        transform: perspective(200px) rotateY(-180deg);
-}
-.flip3D:hover > .back
-{
-        transform: perspective(200px) rotateY(0deg);
-}
